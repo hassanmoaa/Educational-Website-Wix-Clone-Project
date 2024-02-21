@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    
+    <link rel="stylesheet" href="assignments.css">
+    <title>Assignments</title>
+</head>
+<body>
+
+
+    <!--==================================HEADER====================================-->
+    <header class="header">
+        <a href="index.html" class="head"><i class="fa-solid fa-laptop"></i> Online Lessons</a>
+        <nav>
+            
+            <div class="nav-links" id="navLinks">
+                <i class="fa-solid fa-xmark" onclick="hideMenu()"></i>
+
+                <ul>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="services.html">Our Services</a></li>
+                    <li><a href="assignments.html">Assignments</a></li>
+                    <li><a href="packages.html">Packages</a></li>
+                    <li><a href="learning.html">Learning Tools</a></li>
+                    <li><a href="#">Contact</a></li>
+                    <li><a href="#"><i class="fa-regular fa-user"></i>Log In</a></li>
+                </ul>
+
+            </div>
+
+            <i class="fa-solid fa-bars" onclick="showMenu()"></i>
+        </nav>
+    </header>
+    
+    <div class="wrapper">
+
+        <main class="main">
+            <h1>Weekly Assignments</h1>
+            <p>I'm a paragraph. Click here to add your own text and edit me. I’m a great place for you to tell a story and let your users know a little more about you.</p>
+        </main>
+
+        <section class="flex">
+
+            <section class="english">
+                <img src="/images/english-book-2.jpg" alt="">
+                <div class="text-box col">
+                    <h3>English Grade 1-6</h3>
+                    <p>30 Weeks</p>
+                    <span>R 250,00</span>
+                    <a href="#" class="main-btn flex-btn">Join</a>
+                </div>
+            </section>
+
+            <section class="science">
+                <img src="/images/science.png" alt="">
+                <div class="text-box col">
+                    <h3>Science Grade 1-6</h3>
+                    <p>30 Weeks</p>
+                    <span>R 250,00</span>
+                    <a href="#" class="main-btn flex-btn">Join</a>
+                </div>
+            </section>
+
+            <section class="history">
+                <img src="/images/history.png" alt="">
+                <div class="text-box col">
+                    <h3>History Grade 1-6</h3>
+                    <p>30 Weeks</p>
+                    <span>R 250,00</span>
+                    <a href="#" class="main-btn flex-btn">Join</a>
+                </div>
+            </section>
+
+            <section class="math">
+                <img src="/images/math.png" alt="">
+                <div class="text-box col">
+                    <h3>Math Grade 1-6</h3>
+                    <p>30 Weeks</p>
+                    <span>R 250,00</span>
+                    <a href="#" class="main-btn flex-btn">Join</a>
+                </div>
+            </section>
+
+        </section>
+
+    </div>
+
+
+    <!--==================================FOOTER & CONTACT INFO====================================-->
+    <footer class="footer">
+        <div class="foot-wrap">
+
+            <div class="contact-info">
+                <section class="contact">
+                    <h2>Contact Us &<br>Let's Get Started</h2>
+                    <p>Lorem ipsum dolor sit amet,<br>consectetur adipisicing elit.</p>
+                    <a href="#" class="main-btn footer-btn">Introduction Call</a>
+                </section>
+
+                <!--==================================FORM SECTION====================================-->
+                <form action="" method="" id="contactForm" name="contactForm" aria-label="Contact information" role="form" autocomplete="on">
+                    <div class="row-2">
+                        <div class="col-2">
+                            <label for="firstName"> First Name</label><br>
+                            <input id="firstName" type="text" required>
+                        </div>
+                        <div class="col-2">
+                            <label for="lastName">Last Name</label><br>
+                            <input id="lastName" type="text" required>
+                        </div>
+                    </div>
+                    <label for="email">Email*</label><br>
+                    <input id="email" type="email" required>
+                    <label for="message">Message</label><br>
+                    <textarea id="message" type="text" minlength="30" maxlength="2000" required></textarea>
+
+                    <button class="submit-btn" type="submit" form="contactForm" value="submit">Submit</button>
+                </form>
+            </div>
+
+            <!--==================================FOOTERS NAVIGATION====================================-->
+            <nav class="footer-nav">
+                <a href="index.html" class="footer-head"><i class="fa-solid fa-laptop"></i>Online Lessons</a>
+
+                <ul class="footer-links">
+                    <div class="col-3">
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="learning.html">Our Lessons</a></li>
+                        <li><a href="assignments.html">Assignments</a></li>
+                        <li><a href="packages.html">Packages</a></li>
+                        <li><a href="learning.html">Learning Tools</a></li>
+                    </div>
+                    <br>
+                    <div class="col-3 right">
+                        <li class="list-down"><a href="index.html">info@mysite.com</a></li>
+                        <li class="list-down">123-456-7890</li>
+                    </div>
+                </ul>
+            </nav>
+        </div>
+    </footer>
+
+
+    
+    <script>
+    //JS TOGGLE MENU
+    const navLinks = document.getElementById("navLinks");
+    
+        function showMenu() {
+            navLinks.style.top = "0";
+        };
+    
+        function hideMenu() {
+            navLinks.style.top = "-1000px";
+        };
+    </script>
+
+    <!------------------------------FONT-AWESOME---------------------------------------->
+    <script src="https://kit.fontawesome.com/1de198b9ad.js" crossorigin="anonymous"></script>
+
+</body>
+</html>

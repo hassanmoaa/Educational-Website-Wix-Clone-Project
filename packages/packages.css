@@ -1,0 +1,568 @@
+/*-------------------------CSS RESET-----------------------*/
+
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+/* Prevent font size inflation */
+html {
+    -moz-text-size-adjust: none;
+    -webkit-text-size-adjust: none;
+    text-size-adjust: none;
+}
+
+html:focus-within {
+    scroll-behavior: smooth;
+}
+
+/* Remove default margin in favour of better control in authored CSS */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
+    margin-block-end: 0;
+}
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul[role='list'],
+ol[role='list'],
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* Set core body defaults */
+body {
+    min-height: 100vh;
+    text-rendering: optimizeSpeed;
+    line-height: 1.5;
+    letter-spacing: normal;
+}
+
+/* Set shorter line heights on headings and interactive elements */
+h1,
+h2,
+h3,
+h4,
+button,
+input,
+label {
+    line-height: 1.1;
+}
+
+p {
+    text-wrap: balance;
+    letter-spacing: normal;
+}
+
+/* Make images easier to work with */
+svg,
+img,
+picture {
+    max-width: 100%;
+    display: block;
+}
+
+
+
+
+/*------------------------CUSTOM VARIABLES----------------*/
+:root {
+
+    /* FONTS */
+    --fs-none: 1rem;
+    --fs-small: 1.25rem;
+    --fs-small-2: 1.50rem;
+    --fs-mid: 1.75rem;
+    --fs-mid-2: 2rem;
+    --fs-big: 2.25rem;
+    --fs-big-2: 2.50rem;
+    --fs-bigger: 3rem;
+    --fs-huge: 5rem;
+
+    /* FONT WEIGHT */
+    --fw-light: 300;
+    --fw-regular: 400;
+    --fw-mid: 500;
+    --fw-bold: 600;
+    --fw-bolder: 700;
+    --fw-black: 900;
+
+    /* COLORS */
+    --btn: #192A88;
+
+    --hero-bg: #FFEEDE;
+    --secondary-bg: #DCDEF7;
+    --testimonials-bg: #F3F3F3;
+
+}
+
+.main-btn {
+    display: block;
+    background-color: var(--btn);
+    color: white;
+    font-weight: 700;
+    font-size: 1.125rem;
+    padding: .8rem 7.5rem;
+    border: none;
+}
+
+.main-btn:hover,
+.main-btn:focus {
+    background-color: var(--secondary-bg);
+    color: var(--btn);
+}
+
+
+body {
+    font-family: sans-serif;
+}
+
+
+/*==========================HEADER SECTION==========================*/
+.header {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    background: white;
+    z-index: 2;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.head {
+    display: inline-block;
+    margin: .8rem;
+    font-size: var(--fs-small);
+    color: black;
+}
+
+.nav-links {
+    position: absolute;
+    background: var(--secondary-bg);
+    height: 100vh;
+    width: 100%;
+    top: -1000px;
+    right: 0;
+    z-index: 2;
+    transition: 0.5s;
+}
+
+.nav-links ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-inline: auto;
+    text-align: center;
+}
+
+.nav-links ul li {
+    display: block;
+    padding: 1.3rem 0;
+    position: relative;
+    margin-right: 1.5rem;
+}
+
+.nav-links ul li a {
+    color: black;
+    text-align: center;
+    font-weight: var(--fw-bold);
+}
+
+nav .fa-solid {
+    display: block;
+    color: black;
+    margin: 1rem;
+    font-size: 2rem;
+    cursor: pointer;
+    text-align: right;
+}
+
+nav .fa-xmark {
+    margin-top: 1.5rem;
+    margin-right: 1.625rem;
+
+}
+
+nav .fa-user {
+    margin-right: .5rem;
+}
+
+
+
+
+
+h1 {
+    margin-bottom: .5rem;
+}
+
+h2 {
+    margin-bottom: .5rem;
+    font-size: var(--fs-mid);
+}
+
+.wrapper {
+    padding: 1rem;
+    margin-top: 5rem;
+}
+
+
+.grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    margin-inline: auto;
+    margin-top: 3rem;
+}
+
+
+.best-value-text {
+    background-color: pink;
+    padding: .5rem;
+    font-size: 0.825rem;
+    text-align: center;
+    z-index: 2;
+    display: inline-block;
+    margin-left: 8rem;
+}
+
+.best-value-grid {
+    background-color: tomato;
+    padding: 2rem;
+    margin-top: -1rem;
+    max-width: 21.875rem;
+}
+
+.three-month-grid {
+    background-color: var(--testimonials-bg);
+    padding: 2rem;
+    max-width: 21.875rem;
+}
+
+.weekly-grid {
+    background-color: var(--testimonials-bg);
+    padding: 2rem;
+    max-width: 21.875rem;
+}
+
+.dollar {
+    font-weight: 600;
+}
+
+.one {
+    display: block;
+    font-size: var(--fs-huge);
+    font-weight: 700;
+    margin-left: 1.5rem;
+}
+
+.two {
+    font-weight: 500;
+}
+
+.description {
+    font-size: .8rem;
+    margin-top: .5rem;
+    margin-bottom: 2rem;
+}
+
+.benefits {
+    text-align: left;
+    padding: .5rem 0;
+
+}
+
+.benefits-div {
+    margin: .8rem 0 3.5rem 2rem;
+}
+
+
+/*=======================================================FOOTER SECTION==========================================================*/
+
+.footer {
+    padding: 1rem;
+    background-color: var(--secondary-bg);
+}
+
+
+.footer-btn {
+    display: inline-block;
+    background-color: var(--btn);
+    color: white;
+    font-weight: 700;
+    font-size: 1rem;
+    margin-top: .5rem;
+    margin-bottom: 1.5rem;
+    padding: .8rem 1rem;
+    border: none;
+    text-align: center;
+}
+
+.footer-btn:hover,
+.footer-btn:focus {
+    background-color: var(--secondary-bg);
+    color: var(--btn);
+}
+
+.footer-links a {
+    color: #333;
+}
+
+/*-----------FORM----------*/
+
+label {
+    font-weight: var(--fw-bold);
+}
+
+input {
+    display: block;
+    box-sizing: border-box;
+    width: 100%;
+    padding: .7rem;
+    border: none;
+    margin-bottom: .5rem;
+    font-weight: var(--fw-bold);
+    font-size: var(--fs-tiny);
+    cursor: text;
+}
+
+input:hover {
+    cursor: text;
+}
+
+input:focus {
+    outline: none;
+    border: 3px solid var(--btn);
+    background: var(--secondary-bg);
+}
+
+textarea {
+    box-sizing: border-box;
+    border: none;
+    resize: none;
+    width: 100%;
+    padding: 1rem;
+    font-weight: 700;
+    font-size: var(--fs-tiny);
+    cursor: text;
+}
+
+textarea:hover {
+    cursor: text;
+}
+
+textarea:focus {
+    outline: none;
+    border: 3px solid black;
+}
+
+
+.submit-btn {
+    display: block;
+    margin: 2rem auto;
+
+    padding: .8rem 7rem;
+    background: transparent;
+    color: black;
+    border: 4px solid black;
+    cursor: pointer;
+    text-align: center;
+
+    font-size: var(--fs-small-2);
+    font-weight: var(--fw-bold);
+}
+
+.submit-btn:hover,
+.submit-btn:focus {
+    background-color: var(--btn);
+    color: white;
+    border: none;
+    transition: .4s;
+}
+
+
+/*------------FOOTER'S NAVIGATION-------------*/
+
+.footer-nav {
+    margin-top: 5rem;
+}
+
+.footer-head {
+    display: block;
+    font-size: var(--fs-small);
+    text-align: left;
+    color: #333;
+}
+
+.footer-nav .fa-laptop {
+    display: inline-block;
+    padding: 0;
+    font-size: 1.5rem;
+}
+
+.footer-links {
+    padding: .6rem;
+}
+
+.footer-links li {
+    padding: .2rem;
+}
+
+
+
+
+@media (min-width: 800px) {
+
+    /*==============HEADER=============*/
+    .header {
+        position: static;
+        background: transparent;
+    }
+
+    .head {
+        margin: .9rem;
+    }
+
+    .nav-links {
+        display: flex;
+        align-items: center;
+        position: static;
+        background: transparent;
+        height: 0;
+        width: 100%;
+        z-index: 0;
+    }
+
+    .nav-links ul {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .nav-links ul li {
+        display: flex;
+        padding: 0 0;
+        position: static;
+    }
+
+    .nav-links ul li+li {
+        margin-right: 2rem;
+    }
+
+    nav .fa-solid {
+        display: none;
+    }
+
+
+    h1 {
+        padding-bottom: 1rem;
+        font-size: var(--fs-big-2);
+    }
+
+
+    .grid {
+        grid-template-columns: repeat(3, 1fr);
+        justify-items: center;
+        grid-template-areas: "l b w";
+    }
+
+    .best-value {
+        grid-area: b;
+    }
+
+
+    h2 {
+        text-align: center;
+        margin-bottom: 2rem;
+    }
+
+    .dollar {
+        font-size: var(--fs-small-2);
+        margin-right: 10rem;
+    }
+
+    p {
+        text-align: center;
+    }
+
+    .description {
+        margin-bottom: 2rem;
+    }
+
+    .benefits {
+        text-align: center;
+    }
+
+    /*==================CONTACT INFO=====================*/
+    .contact-info {
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    .contact {
+        display: flex;
+        flex-direction: column;
+        font-size: var(--fs-small-2);
+    }
+
+    label {
+        display: block;
+    }
+
+
+    input[type="text"] {
+        width: 96%;
+    }
+
+    .row-2 {
+        display: flex;
+        margin-bottom: .5rem;
+    }
+
+    .submit-btn {
+        width: 100%;
+    }
+
+
+    /*==============================FOOTER==================================*/
+    .foot-wrap {
+        margin-top: 4rem;
+    }
+
+    .footer-btn {
+        font-size: var(--fs-small);
+    }
+
+    .footer-nav {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .right {
+        margin-left: 4rem;
+    }
+
+    .footer-links {
+        padding: .6rem;
+        display: flex;
+    }
+
+}
