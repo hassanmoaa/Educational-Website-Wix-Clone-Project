@@ -1,0 +1,138 @@
+/*-------------------------CSS RESET-----------------------*/
+
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+* {
+    /* padding: 0;
+    margin: 0; */
+}
+
+/* Prevent font size inflation */
+html {
+    -moz-text-size-adjust: none;
+    -webkit-text-size-adjust: none;
+    text-size-adjust: none;
+}
+
+html:focus-within {
+    scroll-behavior: smooth;
+}
+
+/* Remove default margin in favour of better control in authored CSS */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
+    margin-block-end: 0;
+}
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul[role='list'],
+ol[role='list'],
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* Set core body defaults */
+body {
+    min-height: 100vh;
+    text-rendering: optimizeSpeed;
+    line-height: 1.5;
+    letter-spacing: normal;
+}
+
+/* Set shorter line heights on headings and interactive elements */
+h1,
+h2,
+h3,
+h4,
+button,
+input,
+label {
+    line-height: 1.1;
+}
+
+p {
+    text-wrap: balance;
+}
+
+/* Make images easier to work with */
+svg,
+img,
+picture {
+    max-width: 100%;
+    display: block;
+}
+
+
+
+
+/*------------------------CUSTOM VARIABLES----------------*/
+:root {
+
+    /* FONTS */
+    --fs-none: 1rem;
+    --fs-tiny: 1.125rem;
+    --fs-small: 1.25rem;
+    --fs-small-2: 1.50rem;
+    --fs-mid: 1.75rem;
+    --fs-mid-2: 2rem;
+    --fs-big: 2.25rem;
+    --fs-big-2: 2.50rem;
+    --fs-bigger: 3rem;
+    --fs-huge: 5rem;
+
+    /* FONT WEIGHT */
+    --fw-light: 300;
+    --fw-regular: 400;
+    --fw-mid: 500;
+    --fw-bold: 600;
+    --fw-bolder: 700;
+    --fw-black: 900;
+
+    /* COLORS */
+    --btn: #192A88;
+
+    --hero-bg: #FFEEDE;
+    --secondary-bg: #DCDEF7;
+    --testimonials-bg: #F3F3F3;
+
+}
+
+body {
+    font-family: sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+
+h1 {
+    margin-bottom: 2rem;
+}
+
+button {
+    margin: 1rem 0;
+    padding: .5rem 4.3rem;
+    border: 1px solid rgb(157, 155, 155);
+    background-color: white;
+    color: grey;
+    cursor: pointer;
+    order: 2;
+}

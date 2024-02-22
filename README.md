@@ -18,5 +18,7 @@ This project is an educational site aiming to replicate simillar functionality o
 - Swiper.js: A modern touch slider library
 - Font Awesome: Icon library for web development
 - Boxicons: Simple vector icons for your projects
+- Google OAuth: Authentication service to sign in users with their Google account.
+- JSON Web Tokens (JWT): played a crucial role in streamlining and securing the Google OAuth implementation.
 
 These technologies form the foundation of our project, combining the power of HTML, CSS3, and Vanilla JavaScript with additional enhancements from Swiper.js, Font Awesome, and Boxicons. Together, they contribute to creating a dynamic and visually appealing educational website.

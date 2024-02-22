@@ -129,7 +129,7 @@ picture {
 .main-btn:focus {
     background-color: var(--secondary-bg);
     color: var(--btn);
-    transition: .4s
+    transition: .4s;
 }
 
 .col {
