@@ -211,7 +211,6 @@ nav .fa-user {
 
 
 
-
 h1 {
     margin-bottom: .5rem;
 }
@@ -471,6 +470,10 @@ textarea:focus {
         display: none;
     }
 
+
+    .main-head {
+        text-align: center;
+    }
 
     h1 {
         padding-bottom: 1rem;
