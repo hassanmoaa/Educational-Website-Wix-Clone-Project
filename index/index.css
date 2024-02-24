@@ -8,8 +8,8 @@
 }
 
 * {
-    /* padding: 0;
-    margin: 0; */
+    /*padding: ;
+    margin: ;*/
 }
 
 /* Prevent font size inflation */
@@ -155,7 +155,7 @@ body {
 /*==========================HEADER SECTION==========================*/
 .header {
     width: 100%;
-    position: fixed;
+    position: sticky;
     top: 0;
     background: white;
     z-index: 2;
@@ -234,7 +234,7 @@ nav .fa-user {
 }
 
 .hero {
-    margin-block: 4rem;
+    margin-bottom: 3rem;
     text-align: center;
     max-width: 50rem;
 }
